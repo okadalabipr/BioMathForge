@@ -6,6 +6,8 @@ BioMathForge is a comprehensive toolkit for generating, integrating, and analyzi
 
 This toolkit is associated with the study: **Tsutsui M et al., 2025. *****Literature-derived, context-aware gene regulatory networks improve biological predictions and mathematical modeling*****.**
 
+<img width="3927" height="2145" alt="fig6" src="https://github.com/user-attachments/assets/7414a985-affb-46f2-a0bd-b6ee6daadf47" />
+
 ---
 
 ## Features
