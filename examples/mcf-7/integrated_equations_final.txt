@@ -1,0 +1,36 @@
+Heregulin binds HER3 <--> Heregulin_HER3
+Heregulin_HER3 binds HER2 <--> Heregulin_HER3_HER2
+Heregulin_HER3_HER2 is phosphorylated <--> Heregulin_HER3_HER2_p
+Heregulin_HER3_HER2_p activates RAS
+Heregulin_HER3_HER2_p activates PI3K
+EGF binds EGFR <--> EGF_EGFR
+EGF_EGFR dimerizes <--> EGF_EGFR-EGF_EGFR
+EGF_EGFR is phosphorylated <--> EGF_EGFR_p
+EGF_EGFR_p activates RAS
+EGFR dimerizes <--> EGFR-EGFR
+EGFR-EGFR is phosphorylated <--> EGFR-EGFR_p
+EGFR-EGFR_p activates RAS
+EGFR-EGFR_p activates PI3K
+EGFR binds HER2 <--> EGFR_HER2
+EGFR_HER2 is phosphorylated <--> EGFR_HER2_p
+EGFR_HER2_p activates RAS
+EGFR_HER2_p activates PI3K
+EGFR-EGFR_p phosphorylates Shc --> Shc_p
+Shc_p activates RAS
+RAS activates RAF1
+RAF1 phosphorylates MEK --> MEK_p
+MEK_p phosphorylates ERK --> ERK_p_cytoplasm
+ERK_p_cytoplasm translocates <--> ERK_p_nucleus
+ERK_p_cytoplasm phosphorylates RSK --> RSK_p
+RSK_p phosphorylates cFOS --> cFOS_p
+cFOS_p is degraded
+PI3K phosphorylates PIP2 --> PIP3
+PTEN dephosphorylates PIP3 --> PIP2
+PI3K phosphorylates AKT --> AKT_p
+PI3K activates AKT
+PIP3 activates AKT
+AKT_p phosphorylates GSK3B --> GSK3B_p
+GSK3B is phosphorylated <--> GSK3B_p
+AKT_p degrades CDKN1A
+EGF is degraded
+EGFR is degraded

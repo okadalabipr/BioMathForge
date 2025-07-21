@@ -1,0 +1,51 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# VSCode and PyCharm project settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+
+# Compiled C extensions (if any)
+*.so
+
+# Output or cache files
+*.bak
+*.swp
+*.tmp
+*.orig
+
+# Test coverage
+.coverage
+htmlcov/
+.cache/
+.tox/
+.nox/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+.env

@@ -1,0 +1,1 @@
+{"source": "'EGF', 'EGFR', 'AKT', 'GSK3B', 'Shc', 'Grb2', 'SOS', 'MEK', 'RSK', 'cFOS', 'PP2A_act', 'PTEN'", "sink": "'GSK3B_p', 'ERK_p_nucleus', 'cFOS_p'"}

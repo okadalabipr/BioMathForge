@@ -1,0 +1,21 @@
+EGF binds EGFR <--> EGF_EGFR
+EGF_EGFR dimerizes <--> EGF_EGFR-EGF_EGFR
+EGF_EGFR-EGF_EGFR is phosphorylated <--> EGF_EGFR-EGF_EGFR_p
+EGF_EGFR-EGF_EGFR_p activates PI3K
+PI3K phosphorylates PIP2 --> PIP3
+PI3K phosphorylates AKT --> AKT_p
+AKT_p phosphorylates GSK3B --> GSK3B_p
+EGF_EGFR-EGF_EGFR_p phosphorylates Shc --> Shc_p
+Shc_p binds Grb2 <--> Shc_p_Grb2
+Shc_p_Grb2 binds SOS <--> Shc_p_Grb2_SOS
+Shc_p_Grb2_SOS activates RAS_GDP
+RAS_GDP <--> RAS_GTP
+RAS_GTP activates RAF1
+RAF1 phosphorylates MEK --> MEK_p
+MEK_p phosphorylates ERK --> ERK_p
+ERK_p translocates <--> ERK_p_nucleus
+ERK_p phosphorylates RSK --> RSK_p
+RSK_p phosphorylates cFOS --> cFOS_p
+cFOS_p is degraded
+PP2A_act dephosphorylates ERK_p --> ERK
+PTEN dephosphorylates PIP3 --> PIP2

@@ -1,0 +1,106 @@
+ppERK_nucleus phosphorylates RSKn --> pRSKn
+PP2AActive dephosphorylates ErkActive --> ErkInactive
+MMP2 activates TGFB1
+TGFB1_inactive <--> TGFB1_active
+pMEK phosphorylates ERK1 --> pERK1
+pMEK phosphorylates ERK2 --> pERK2
+EGF binds EGFR <--> EGF_EGFR
+EGF_EGFR dissociates to EGF and EGFR
+EGF_EGFR dimerizes <--> EGF_EGFR-EGF_EGFR
+EGF_EGFR is phosphorylated <--> pEGF_EGFR
+EGF_EGFR <--> EGF_EGFR_active
+EGF activates EGFR
+EGFR is degraded
+EGF is degraded
+MAP2K1 binds MAPK1 <--> MAP2K1_MAPK1
+MAP2K1_MAPK1 dissociates to MAP2K1 and MAPK1
+MAP2K1 phosphorylates MAPK1 --> pMAPK1
+MAPK1 is phosphorylated <--> pMAPK1
+MAP2K1 is phosphorylated <--> pMAP2K1
+ERK_active phosphorylates ucFOS --> cFOSp
+pRSK phosphorylates ucFOS --> cFOSp
+cFOSp is degraded
+MAPK8 transcribes JUN
+MAPK8 phosphorylates JUN --> JUN_P
+EGF_ErbB1 binds ErbB2 <--> EGF_ErbB1_ErbB2
+EGF_ErbB1_ErbB2 binds ATP <--> EGF_ErbB1_ErbB2_ATP
+EGF_ErbB1_ATP binds ErbB2 <--> EGF_ErbB1_ErbB2
+EGF_ErbB1_ATP binds ERBB2 <--> EGF_ErbB1_ERBB2
+EGF_EGFR_inh binds HER2 <--> EGF_EGFR_HER2_inh
+EGF_L binds ERBB2_R <--> EGF_ErbB1_R
+EGF_EGFR_ATP binds ERBB2 <--> EGF_EGFR_ERBB2
+MAP2K7 phosphorylates uMAPK8 --> pMAPK8
+MAP2K7 phosphorylates pMAPK8 --> ppMAPK8
+PI3K phosphorylates AKT --> AKTp
+PI3K_Active phosphorylates AKT --> AKTp
+pERK phosphorylates uGSK3B --> pGSK3B
+pEGFR phosphorylates PI3K_Inactive --> PI3K_Active
+EGFR_bound phosphorylates PI3K_Inactive --> PI3K_Active
+NFkB_cytoplasm translocates <--> NFkB_nucleus
+NFkB_nucleus transcribes TNF
+TGFB1 synthesizes TNFSF11
+MEK_active binds ERK <--> ERK_MEK
+MEK_active phosphorylates ERK --> pERK
+ERK is phosphorylated <--> pERK
+ppMEK binds pERK <--> pERK_ppMEK
+ppMEK phosphorylates pERK --> ppERK
+pERK is phosphorylated <--> ppERK
+MEK1 phosphorylates uERK1 --> pERK1
+MEK1 phosphorylates uERK2 --> pERK2
+MEK2 phosphorylates uERK1 --> pERK1
+MEK2 phosphorylates uERK2 --> pERK2
+EGFR dimerizes <--> EGFR_EGFR
+ERBB2 dimerizes <--> ERBB2_ERBB2
+EGFR binds ERBB2 <--> EGFR_ERBB2
+EGFR_EGFR is phosphorylated <--> EGFR_EGFR_p
+EGFR_ERBB2 is phosphorylated <--> EGFR_ERBB2_p
+EGFR_EGFR_p activates PI3K
+EGFR_ERBB2_p activates PI3K
+PI3K phosphorylates PIP2 --> PIP3
+PTEN dephosphorylates PIP3 --> PIP2
+EGFR_EGFR_p phosphorylates uShc --> pShc
+EGFR_ERBB2_p phosphorylates uShc --> pShc
+Sig_PTP1B dephosphorylates pShc --> uShc
+EGFR_EGFR_p phosphorylates uRasGAP --> pRasGAP
+EGFR_ERBB2_p phosphorylates uRasGAP --> pRasGAP
+Sig_PTP1B dephosphorylates pRasGAP --> uRasGAP
+EGFR_EGFR_p phosphorylates uGab1 --> pGab1
+EGFR_ERBB2_p phosphorylates uGab1 --> pGab1
+Sig_PTP1B dephosphorylates pGab1 --> uGab1
+ppMEK2 phosphorylates ERK2 --> pERK2
+ppMEK2 phosphorylates pERK2 --> ppERK2
+ERK phosphorylates uP90RSK --> pP90RSK
+NFKB1 binds RELA <--> NFKB1-RELA
+NFkB binds Promp105_RNAP <--> Promp105_RNAP1_p50p65
+NFkB binds RNAP_Promp105_FTAX <--> RNAP_Promp105_FTAX_NFkB_active
+NFkB binds PromIkBa_RNAP3_FTAz <--> IkBa_RNAP3_FTAz_p50p65
+NFkB binds PromIkBa_RNAP3 <--> PromIkBa_RNAP3_NFkB_active
+NFkB binds Promp105_RNAP_FTAX <--> Promp105_RNAP_FTAX_NFkB_active
+NFkB is degraded
+TGFb1 synthesizes PAI1
+EGF_L binds SHC1 <--> EGF_SHC1
+EGF_L binds SHC1 <--> SHC1_EGFR
+SHC1_EGFR <--> SHC1_EGFR_active
+EGF_L binds SHC1_R <--> SHC1_EGFR_active
+pAkt phosphorylates GSK3B --> pGSK3B
+GSK3B is phosphorylated <--> pGSK3B
+IFNG activates MHC2
+TGFB1 inhibits MHC2
+MHC2 is synthesized
+MEK2_active phosphorylates uERK1 --> pERK1
+eph dephosphorylates pERK1 --> uERK1
+MAPK activates C_Raf
+C_Raf activates MAPK
+Raf1_Active dephosphorylates pERK --> ERK
+p38_P activates Caspase_I
+Caspase_I <--> Caspase_A
+p38_P activates CASP3_inactive
+CASP3_inactive <--> CASP3_active
+RAF1 binds MEK_ERK <--> RAF1_MEK_ERK
+RAF1_MEK_ERK dissociates to RAF1 and ERK
+RAF1 phosphorylates MEK_ERK --> ppMEK_ERK
+MEK_ERK is phosphorylated <--> pMEK_ERK
+pMEK_ERK is phosphorylated <--> ppMEK_ERK
+Akt_pS473 degrades CDKN1A
+MAPK14_P phosphorylates RELA --> NFkB_P
+RELA is phosphorylated <--> NFkB_P

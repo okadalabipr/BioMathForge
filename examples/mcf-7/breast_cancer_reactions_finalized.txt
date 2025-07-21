@@ -1,0 +1,49 @@
+@rxn  RAS_inact  -->  RAS_act : p[V_Heregulin_HER3_HER2_p_RAS] * u[Heregulin_HER3_HER2_p] * u[RAS_inact] / ( p[K_Heregulin_HER3_HER2_p_RAS] + u[RAS_inact] )
+@rxn  PI3K_inact  -->  PI3K_act : p[V_Heregulin_HER3_HER2_p_PI3K] * u[Heregulin_HER3_HER2_p] * u[PI3K_inact] / ( p[K_Heregulin_HER3_HER2_p_PI3K] + u[PI3K_inact] )
+@rxn  RAS_inact  -->  RAS_act : p[V_EGF_EGFR_p_RAS] * u[EGF_EGFR_p] * u[RAS_inact] / ( p[K_EGF_EGFR_p_RAS] + u[RAS_inact] )
+@rxn  RAS_inact  -->  RAS_act : p[V_EGFR-EGFR_p_RAS] * u[EGFR-EGFR_p] * u[RAS_inact] / ( p[K_EGFR-EGFR_p_RAS] + u[RAS_inact] )
+@rxn  PI3K_inact  -->  PI3K_act : p[V_EGFR-EGFR_p_PI3K] * u[EGFR-EGFR_p] * u[PI3K_inact] / ( p[K_EGFR-EGFR_p_PI3K] + u[PI3K_inact] )
+@rxn  RAS_inact  -->  RAS_act : p[V_EGFR_HER2_p_RAS] * u[EGFR_HER2_p] * u[RAS_inact] / ( p[K_EGFR_HER2_p_RAS] + u[RAS_inact] )
+@rxn  PI3K_inact  -->  PI3K_act : p[V_EGFR_HER2_p_PI3K] * u[EGFR_HER2_p] * u[PI3K_inact] / ( p[K_EGFR_HER2_p_PI3K] + u[PI3K_inact] )
+@rxn  RAS_inact  -->  RAS_act : p[V_Shc_p_RAS] * u[Shc_p] * u[RAS_inact] / ( p[K_Shc_p_RAS] + u[RAS_inact] )
+@rxn  RAF1_inact  -->  RAF1_act : p[V_RAS_RAF1] * u[RAS_act] * u[RAF1_inact] / ( p[K_RAS_RAF1] + u[RAF1_inact] )
+@rxn  AKT_inact  -->  AKT_act : p[V_PI3K_AKT] * u[PI3K_act] * u[AKT_inact] / ( p[K_PI3K_AKT] + u[AKT_inact] )
+@rxn  AKT_inact  -->  AKT_act : p[V_PIP3_AKT] * u[PIP3] * u[AKT_inact] / ( p[K_PIP3_AKT] + u[AKT_inact] )
+@rxn  RAF1_act  -->  RAF1_inact : p[V_SPRYiRAF1] * u[SPRY] * u[RAF1_act] / ( p[K_RAF1i] + u[RAF1_act] )
+Heregulin binds HER3 <--> Heregulin_HER3
+Heregulin_HER3 binds HER2 <--> Heregulin_HER3_HER2
+Heregulin_HER3_HER2 is phosphorylated <--> Heregulin_HER3_HER2_p
+EGF binds EGFR <--> EGF_EGFR
+EGF_EGFR dimerizes <--> EGF_EGFR-EGF_EGFR
+EGF_EGFR-EGF_EGFR is phosphorylated <--> EGF_EGFR_p
+EGFR dimerizes <--> EGFR-EGFR
+EGFR-EGFR is phosphorylated <--> EGFR-EGFR_p
+EGFR binds HER2 <--> EGFR_HER2
+EGFR_HER2 is phosphorylated <--> EGFR_HER2_p
+EGFR-EGFR_p phosphorylates Shc --> Shc_p
+RAF1_act phosphorylates MEK --> MEK_p
+MEK_p phosphorylates ERK --> ERK_p_cytoplasm
+ERK_p_cytoplasm translocates <--> ERK_p_nucleus
+ERK_p_cytoplasm phosphorylates RSK --> RSK_p
+RSK_p phosphorylates cFOS --> cFOS_p
+cFOS_p is degraded
+PI3K_act phosphorylates PIP2 --> PIP3
+PTEN dephosphorylates PIP3 --> PIP2
+PI3K_act phosphorylates AKT_inact --> AKT_p
+AKT_p phosphorylates GSK3B --> GSK3B_p
+AKT_p degrades CDKN1A
+EGF is degraded
+EGFR is degraded
+ERK_p_nucleus transcribes DUSP
+DUSP dephosphorylates ERK_p_cytoplasm --> ERK
+ERK_p_nucleus transcribes SPRY
+AKT_p transcribes CDKN1A
+GSK3B degrades CDKN1A
+Shc_p is degraded
+MEK_p is degraded
+RSK_p is degraded
+AKT_p is degraded
+GSK3B_p is degraded
+ERK is degraded
+DUSP is degraded
+SPRY is degraded
