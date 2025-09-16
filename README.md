@@ -31,7 +31,7 @@ This toolkit is associated with the study: **Tsutsui M et al., 2025. *****Litera
 ### 1. Installation
 
 ```bash
-git clone https://github.com/okada-lab/BioMathForge
+git clone https://github.com/okadalabipr/BioMathForge
 cd BioMathForge
 pip install .
 
@@ -47,7 +47,7 @@ We provide an example workflow using breast cancer-related equations curated fro
 
 #### Step 0. Prepare Input Equations
 
-Small-scale example equations (`example_biomodels_equations.csv`) derived from BioModels are provided. Full datasets and details are described in our accompanying paper and the repository [okada-lab/context-dependent-GRN](https://github.com/okada-lab/context-dependent-GRN).
+Small-scale example equations (`example_biomodels_equations.csv`) derived from BioModels are provided. Full datasets and details are described in our accompanying paper and the repository [okadalabipr/context-dependent-GRN](https://github.com/okadalabipr/context-dependent-GRN).
 
 ---
 
