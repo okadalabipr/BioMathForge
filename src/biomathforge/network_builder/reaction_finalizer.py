@@ -121,7 +121,7 @@ class ReactionFinalizer:
             activation_template = self.prompt_manager.get_prompt("rewrite_activation_inhibition_prompt")
             
             if not activation_template:
-                self.logger.error("❌ 活性化・阻害書き換え用プロンプトが見つかりません")
+                self.logger.error("❌ Could not find a prompt for activation/inhibition rewriting.")
                 return None
             
             # Create rewrite prompt
