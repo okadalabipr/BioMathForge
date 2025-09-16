@@ -225,18 +225,18 @@ class FormattedReactionGenerator:
                 metadata={"description": "BioMathForge reaction generation"}
             )
             
-            self.logger.info(f"📊 バッチID: {batch.id}")
-            self.logger.info("⏳ バッチ処理完了を待機中...")
+            self.logger.info(f"📊 Batch ID: {batch.id}")
+            self.logger.info("⏳ Waiting for batch processing to complete...")
             
             # Wait for batch completion
             while True:
                 batch = self.client.batches.retrieve(batch.id)
-                self.logger.info(f"📊 バッチステータス: {batch.status}")
+                self.logger.info(f"📊 Batch status: {batch.status}")
                 
                 if batch.status == "completed":
                     break
                 elif batch.status in ["failed", "expired", "cancelled"]:
-                    self.logger.error(f"❌ バッチ処理失敗: {batch.status}")
+                    self.logger.error(f"❌ Batch processing failed: {batch.status}")
                     return []
                 
                 time.sleep(300)  # Check at 300-second intervals
@@ -356,7 +356,7 @@ def generate_formatted_reactions(
         )
         
         # 1. Reaction generation
-        logger.info("🧬 反応式生成フェーズ開始")
+        logger.info("🧬 Reaction generation phase started")
         raw_reactions = generator.generate_batch_reactions(
             biomodels_reactions=biomodels_reactions,
             max_rows=max_rows,
@@ -364,12 +364,12 @@ def generate_formatted_reactions(
         )
         
         if not raw_reactions:
-            logger.error("❌ 反応式生成に失敗しました")
+            logger.error("❌ Failed to generate reaction equations")
             return None
         
         # 2. Format validation and correction
         if validate_format:
-            logger.info("🔍 反応式検証フェーズ開始")
+            logger.info("🔍 Reaction validation phase started")
             
             # Extract reaction equations from tab-delimited data
             equations_only = []
@@ -384,13 +384,13 @@ def generate_formatted_reactions(
             validated_reactions = generator.response_handler.validate_equations_format(equations_only, max_iterations=max_iterations)
             
             if validated_reactions is None:
-                logger.warning("⚠️  検証に失敗しましたが、生の反応式を返します")
+                logger.warning("⚠️  Validation failed, but returning raw reaction equations")
                 # Extract reaction equations from tab-delimited data
                 return equations_only
             
             return validated_reactions
         else:
-            logger.info("ℹ️  検証をスキップします")
+            logger.info("ℹ️  Skipping validation")
             # Extract reaction equations from tab-delimited data
             return [r.split("\t", 1)[1] if "\t" in r else r for r in raw_reactions]
     
